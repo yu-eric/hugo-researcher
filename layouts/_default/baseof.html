@@ -10,9 +10,5 @@
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
-
-        {{ if not .Site.IsServer }}
-        {{- partial "consent.html" . -}}
-        {{ end }}
     </body>
 </html>
